@@ -45,7 +45,7 @@ body {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  height: 500px;
+  height: 400px;
   width: 100%;
 }
 .container-text-img {
@@ -71,4 +71,24 @@ body {
   width: 90%;
   text-align: center;
   line-height: 25px;
+}
+.flex-img {
+  display: flex;
+  height: 500px;
+  width: 100%;
+  background-color: #f5f5dc;
+  gap: 15px;
+  justify-content: center;
+}
+.flex-img > img {
+  height: 100%;
+  width: 400px;
+}
+.logo {
+  background-color: #f5f5dc;
+  text-align: center;
+  height: 200px;
+}
+.logo > img {
+  height: 100%;
 }
