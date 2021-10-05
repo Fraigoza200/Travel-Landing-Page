@@ -3,8 +3,8 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-.container{
- text-align: center;
+.container {
+  text-align: center;
 }
 .landing-page {
   position: relative;
@@ -33,14 +33,14 @@ body {
   margin-bottom: 0;
 }
 @keyframes heading-animation {
-  from{
+  from {
     top: 0;
   }
-  to{
+  to {
     top: 15%;
   }
 }
-.container-text{
+.container-text {
   background-color: #f5f5dc;
   display: flex;
   flex-direction: row;
@@ -57,7 +57,7 @@ body {
 .container-text-img > img {
   height: 100%;
 }
-.text-about{
+.text-about {
   height: 400px;
   font-family: 'Scheherazade New', serif;
   font-weight: 100;
@@ -91,4 +91,31 @@ body {
 }
 .logo > img {
   height: 100%;
+}
+@media only screen and (min-width: 2000px) {
+  .container-text {
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    gap: 80px;
+  }
+  .container-text-img {
+    height: 600px;
+    width: unset;
+  }
+  .text-about {
+    height: 600px;
+    width: 50%;
+  }
+  .about-para {
+    width: unset;
+    line-height: 50px;
+  }
+  .about-heading {
+    font-size: 50px;
+    border-bottom: 1px solid #000;
+  }
+  .logo {
+    height: 300px;
+  }
 }
