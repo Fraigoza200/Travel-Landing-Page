@@ -285,6 +285,14 @@ body {
   .logo > img {
     width: 100%;
   }
+  .logo-2 {
+    height: 250px;
+    background-color: #f5f5dc;
+    text-align: center;
+  }
+  .logo-2 > img {
+    height: 100%;
+  }
   .container-text-2 {
     flex-direction: column;
   }
