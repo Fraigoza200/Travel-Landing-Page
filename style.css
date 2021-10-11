@@ -106,23 +106,112 @@ body {
 .about-heading-2 {
   text-align: center;
 }
-.glassmorphism {
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  background: rgba(245, 245, 220, 0.25);
   background-color: #f5f5dc;
+  border-radius: 10px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding-top: 50px;
-  height: 500px;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  /* box-shadow: 0 25px 45px rgb(0, 0, 0, ); */
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  border-right: 1px solid rgb(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
 }
 .form {
-  height: 300px;
-  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
   background: rgba(245, 245, 220, 0.25);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4.5px);
-  -webkit-backdrop-filter: blur(4.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.form h2{
+  position: relative;
+  color: #000;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.form h2:before{
+  content: '';
+  position: absolute;
+  left: 76px;
+  bottom: -10px;
+  width: 80px;
+  height: 4px;
+  background: #fff;
+}
+.form .inputBx {
+  width: 100%;
+  margin-top: 20px;
+}
+.form .inputBx input {
+  width: 90%;
+  background: rgba(245, 245, 220, 0.25);
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 35px;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  border-right: 1px solid rgb(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #fff;
+  box-shadow: 0 5px 15px rgb(0, 0, 0, 0.05);
+}
+.form .inputBx textarea {
+  width: 90%;
+  height: 140px;
+  resize: none;
+  background: rgba(245, 245, 220, 0.25);
+  border: none;
+  outline: none;
+  padding: 10px 5px;
+  border-radius: 15px;
+  border: 1px solid rgb(255, 255, 255, 0.5);
+  border-right: 1px solid rgb(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #000 !important;
+  box-shadow: 0 5px 15px rgba(7, 0, 0, 0.05);
+}
+.form .inputBx input::placeholder {
+  color: #000;
+}
+.form .inputBx textarea::placeholder {
+  color: #000;
+}
+.form .inputBx input[type='submit'] {
+  background: #000;
+  color: #666;
+  max-width: 150px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 80px;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+}
+.form .inputBx input[type='submit']:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #000;
+  font-weight: 600;
+  border: 1px solid #000;
+}
+.text{
+  margin-top: 5px;
+  color: #000;
+}
+.text a{
+  margin-top: 5px;
+  color: rgb(158, 144, 144);
 }
 @media only screen and (min-width: 2000px) {
   .container-text {
