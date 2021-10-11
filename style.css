@@ -92,6 +92,18 @@ body {
 .logo > img {
   height: 100%;
 }
+.container-text-2 {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 50px;
+  background-color: #f5f5dc;
+}
+.container-text-img.second {
+  padding-left: 20px;
+}
+.about-heading-2 {
+  text-align: center;
+}
 @media only screen and (min-width: 2000px) {
   .container-text {
     align-items: center;
