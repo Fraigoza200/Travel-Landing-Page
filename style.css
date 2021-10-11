@@ -95,14 +95,34 @@ body {
 .container-text-2 {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
   padding-top: 50px;
   background-color: #f5f5dc;
 }
 .container-text-img.second {
-  padding-left: 20px;
+  padding-left: 50px;
 }
 .about-heading-2 {
   text-align: center;
+}
+.glassmorphism {
+  background-color: #f5f5dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  height: 500px;
+}
+.form {
+  height: 300px;
+  display: flex;
+  background: rgba(245, 245, 220, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 @media only screen and (min-width: 2000px) {
   .container-text {
