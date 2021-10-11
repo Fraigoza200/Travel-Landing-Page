@@ -130,6 +130,8 @@ body {
   background: rgba(245, 245, 220, 0.25);
 }
 .form h2{
+  border-bottom: 1px dotted #000;
+  border-radius: 10px;
   position: relative;
   color: #000;
   font-size: 30px;
@@ -145,7 +147,7 @@ body {
   bottom: -10px;
   width: 80px;
   height: 4px;
-  background: #fff;
+  background: #f5f5dc;
 }
 .form .inputBx {
   width: 100%;
@@ -238,5 +240,58 @@ body {
   }
   .logo {
     height: 300px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .container {
+    min-height: unset;
+    border: none;
+  }
+  .landing-page {
+    height: auto;
+  }
+  .text-info {
+    font-size: 40px;
+  }
+  .about-heading {
+    font-size: 35px;
+  }
+  .container-text {
+    flex-direction: column;
+    align-items: center;
+    height: unset;
+  }
+  .text-about {
+    height: unset;
+  }
+  .container-text-img {
+    padding: 0;
+    width: 95%;
+  }
+  .container-text-img > img{
+    width: 100%;
+  }
+  .flex-img {
+    flex-direction: column;
+    height: unset;
+    align-items: center;
+  }
+  .flex-img > img {
+    width: 95%;
+  }
+  .logo {
+    height: 300px;
+  }
+  .logo > img {
+    width: 100%;
+  }
+  .container-text-2 {
+    flex-direction: column;
+  }
+  .container-text-img.second {
+    padding: 0;
+  }
+  .form .inputBx input[type='submit'] {
+    margin-left: 0;
   }
 }
